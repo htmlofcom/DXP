@@ -85,7 +85,11 @@
      line-height: 145%;
      letter-spacing: -1%;
  }
-
+ @media(max-width: 991px) {
+    h1 {
+        font-size: 29px;
+    }
+}
  ul {
      list-style: none;
      margin: 0;
@@ -728,15 +732,23 @@
  .hero-banner{
     background-color: var(--color-pink);
     color: var(--color-default);
-    padding: 60px 20px 0 80px;
+    padding: 50px 20px 0 80px;
  }
  .recommendation-block{
     background-color: var(--color-default);
     padding: 28px 40px;
     color: var(--color-white);
-    margin-top: -120px;
+    margin-top: -60px;
     margin-left: 40px;
  }
+ @media(max-width: 768px) {
+    .hero-banner{
+        padding: 20px 20px 50px 20px;
+     }
+     .recommendation-block{
+        margin-top: -40px;
+     }
+}
  .recommendation-block .recommendation-link{
     display: flex;
     align-items: center;
