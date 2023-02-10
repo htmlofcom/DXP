@@ -85,11 +85,13 @@
      line-height: 145%;
      letter-spacing: -1%;
  }
+
  @media(max-width: 991px) {
-    h1 {
-        font-size: 29px;
-    }
-}
+     h1 {
+         font-size: 29px;
+     }
+ }
+
  ul {
      list-style: none;
      margin: 0;
@@ -117,7 +119,20 @@
      -webkit-transition: all .3s linear 0s;
      transition: all .3s linear 0s;
  }
-
+.button-subscribe{
+    background-color: var(--color-default);
+    color: var(--color-white);
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 14px;
+    position: absolute;
+    margin-bottom: -40px;
+}
+.button-subscribe:hover{
+    color: var(--color-default);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-default);
+}
  /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -640,6 +655,16 @@
      }
  }
 
+ .multicolor-banner {
+     position: absolute;
+     bottom: 0;
+ }
+
+ @media (max-width:992px) {
+     .multicolor-banner {
+         display: none;
+     }
+ }
 
  /* search */
  @media (max-width:768px) {
@@ -721,68 +746,84 @@
      width: 100%;
  }
 
-.hero-image-carousel img{
-    height: 450px;
-    object-fit: cover;
-}
-.hero-image-carousel .carousel-caption{
-    padding-top: 0  ;
+ .hero-image-carousel img {
+     height: 450px;
+     object-fit: cover;
  }
+
+ .hero-image-carousel .carousel-caption {
+     padding-top: 0;
+ }
+
  /*********************Hero Banner**************************/
- .hero-banner{
-    background-color: var(--color-pink);
-    color: var(--color-default);
-    padding: 50px 20px 0 80px;
+ .hero-banner {
+     background-color: var(--color-pink);
+     color: var(--color-default);
+     padding: 50px 20px 0 80px;
  }
- .recommendation-block{
-    background-color: var(--color-default);
-    padding: 28px 40px;
-    color: var(--color-white);
-    margin-top: -60px;
-    margin-left: 40px;
+
+ .hero-banner-img {
+     height: 100%;
+     object-fit: cover;
  }
+
+ .recommendation-block {
+     background-color: var(--color-default);
+     padding: 28px 40px;
+     color: var(--color-white);
+     margin-top: -60px;
+     margin-left: 40px;
+ }
+
  @media(max-width: 992px) {
-     .recommendation-block{
-        margin-top: -40px;
+     .recommendation-block {
+         margin-top: -40px;
      }
-}
+ }
+
  @media(max-width: 768px) {
-    .hero-banner{
-        padding: 35px 20px 50px 20px;
-        min-height: 260px;
+     .hero-banner {
+         padding: 35px 20px 50px 20px;
+         min-height: 260px;
      }
-     .recommendation-block{
-        margin-top: -60px;
+
+     .recommendation-block {
+         margin-top: -60px;
      }
-}
- .recommendation-block .recommendation-link{
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
  }
- .recommendation-block a{
-    color: var(--color-white);
+
+ .recommendation-block .recommendation-link {
+     display: flex;
+     align-items: center;
+     margin-bottom: 30px;
  }
- .recommendation-block img{
-    height: 24px;
+
+ .recommendation-block a {
+     color: var(--color-white);
+ }
+
+ .recommendation-block img {
+     height: 24px;
  }
 
  .breadcrumb-position {
-    margin-bottom: -40px;
-    position: relative;
-    width: 85%;
-    top: 10px;
-    left: 30px;
+     margin-bottom: -40px;
+     position: relative;
+     width: 85%;
+     top: 10px;
+     left: 30px;
  }
 
  .breadcrumb-position .breadcrumb {
      margin-left: 10px;
  }
+
  @media(max-width: 992px) {
-    .breadcrumb-position {
-       left: 10px;
-    }
+     .breadcrumb-position {
+         left: 10px;
+     }
  }
+
  /*********************End Hero Banner**************************/
  /***********************************************/
  .info-card {
@@ -939,9 +980,10 @@
      .teaser-2>.col {
          min-width: 100%;
      }
+
      .teaser-2>.col {
-        margin-top: 10px;
-    }
+         margin-top: 10px;
+     }
 
  }
 
@@ -1032,20 +1074,21 @@
      border-bottom: solid 1px #b1b4b6;
  }
 
- .blue-bg-all{
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    padding: 20px;
-    position: relative;
+ .blue-bg-all {
+     background-color: var(--color-primary);
+     color: var(--color-white);
+     padding: 20px;
+     position: relative;
  }
- .blue-bg-all::after{
-    position: absolute;
-    background-color: var(--color-primary);
-    display: block;
-    content: '';
-    top: 0;
-    height: 100%;
-    width: 100%;
-    left: 99%;
-    right: auto;
+
+ .blue-bg-all::after {
+     position: absolute;
+     background-color: var(--color-primary);
+     display: block;
+     content: '';
+     top: 0;
+     height: 100%;
+     width: 100%;
+     left: 99%;
+     right: auto;
  }
