@@ -434,8 +434,6 @@
      display: flex;
      flex-wrap: wrap;
      padding: 20px 0 60px 0;
-     -webkit-transition: all .3s linear 0s;
-     transition: all .3s linear 0s;
      min-height: 78vh;
  }
 
