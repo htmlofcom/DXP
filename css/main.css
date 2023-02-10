@@ -741,12 +741,18 @@
     margin-top: -60px;
     margin-left: 40px;
  }
- @media(max-width: 768px) {
-    .hero-banner{
-        padding: 20px 20px 50px 20px;
-     }
+ @media(max-width: 992px) {
      .recommendation-block{
         margin-top: -40px;
+     }
+}
+ @media(max-width: 768px) {
+    .hero-banner{
+        padding: 35px 20px 50px 20px;
+        min-height: 260px;
+     }
+     .recommendation-block{
+        margin-top: -60px;
      }
 }
  .recommendation-block .recommendation-link{
@@ -759,6 +765,23 @@
  }
  .recommendation-block img{
     height: 24px;
+ }
+
+ .breadcrumb-position {
+    margin-bottom: -40px;
+    position: relative;
+    width: 85%;
+    top: 10px;
+    left: 30px;
+ }
+
+ .breadcrumb-position .breadcrumb {
+     margin-left: 10px;
+ }
+ @media(max-width: 992px) {
+    .breadcrumb-position {
+       left: 10px;
+    }
  }
  /*********************End Hero Banner**************************/
  /***********************************************/
@@ -1008,21 +1031,6 @@
      height: 0;
      border-bottom: solid 1px #b1b4b6;
  }
-
-
-
- .breadcrumb-position {
-    margin-bottom: -40px;
-    position: relative;
-    width: 100%;
-    top: 10px;
-    left: 30px;
- }
-
- .breadcrumb-position .breadcrumb {
-     margin-left: 10px;
- }
-
 
  .blue-bg-all{
     background-color: var(--color-primary);
