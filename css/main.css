@@ -116,6 +116,10 @@
      background-color: var(--color-default);
  }
 
+ .green-bg {
+     background-color: var(--color-header-1);
+ }
+
  .btn-primary {
      background-color: var(--color-default);
      color: var(--color-white);
@@ -134,6 +138,24 @@
      transition: all .3s linear 0s;
  }
 
+ .btn-secondary {
+     background-color: var(--color-white);
+     color: var(--color-default);
+     border: 1px solid var(--color-white) !important;
+     border-radius: 30px;
+     font-style: normal;
+     font-weight: 400;
+     padding: 10px 20px;
+ }
+
+ .btn-secondary:hover {
+     background-color: var(--color-default);
+     color: var(--color-white);
+     border: 1px solid var(--color-white) !important;
+     -webkit-transition: all .3s linear 0s;
+     transition: all .3s linear 0s;
+ }
+
  .button-subscribe {
      font-size: 20px;
      position: absolute;
@@ -147,7 +169,7 @@
  /********************************Multicolor Line****************************************/
  .bg-blue {
      background-color: var(--color-primary);
-     width: 20%;
+     width: 25%;
  }
 
  .bg-megenta {
@@ -157,17 +179,17 @@
 
  .bg-pink {
      background-color: var(--color-pink);
-     width: 20%;
+     width: 10%;
  }
 
  .bg-yellow {
      background-color: var(--color-header-2);
-     width: 20%;
+     width: 30%;
  }
 
  .bg-green {
      background-color: var(--color-header-1);
-     width: 20%;
+     width: 15%;
  }
 
  .subscribe-multicolor-banner {
@@ -893,6 +915,7 @@
      padding: 15px 0 10px 0;
      min-height: 180px;
      position: relative;
+     width: 100%;
  }
 
  .info-card span.date::before {
@@ -1024,6 +1047,14 @@
 
  .info-card.news-info {
      border-top: none;
+ }
+
+ .info-card.related-news a {
+     color: var(--color-default);
+ }
+
+ .info-card.related-news:hover {
+     background-color: var(--color-white);
  }
 
  /************************End Teaser Card***********************/
@@ -1275,3 +1306,40 @@
          margin-top: 30px !important;
      }
  }
+
+ /*********************************End Footer******************************************/
+
+ swiper-container {
+     width: 100%;
+     height: 100%;
+     padding: 15px 70px 15px 15px;
+ }
+ /* swiper-container:last-child {
+    padding: 15px 15px 15px 15px;
+} */
+ @media(max-width: 992px) {
+     swiper-container {
+         padding-left: 0;
+     }
+ }
+
+ swiper-slide {
+     text-align: center;
+     font-size: 18px;
+     background: transparent;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: var(--color-default);
+ }
+
+ swiper-container .swiper-wrapper {
+     padding-bottom: 40px !important;
+ }
+
+ /* swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
