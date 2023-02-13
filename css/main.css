@@ -716,8 +716,9 @@
          border-radius: 0;
      }
  }
+/*******************************End Header*************************************/
 
- /* carousel */
+ /***************************** carousel ************************************ */
  .carousel-indicators button.active {
      height: 13px !important;
      width: 13px !important;
@@ -794,7 +795,7 @@
      padding-top: 0;
  }
 
- /*********************Hero Banner**************************/
+ /*********************************Hero Banner**************************/
  .hero-banner {
      background-color: var(--color-pink);
      color: var(--color-default);
@@ -863,8 +864,8 @@
      }
  }
 
- /*********************End Hero Banner**************************/
- /***********************************************/
+ /*****************************End Hero Banner**************************/
+ /***************************Teaser Card*******************************/
  .info-card {
      font-style: normal;
      font-weight: 400;
@@ -995,7 +996,7 @@
      background-color: var(--color-default);
  }
 
- /***********************************************/
+ /************************End Teaser Card***********************/
  /* .teaser-3>.col {
     min-width: 33.3333333%;
 }
@@ -1031,6 +1032,7 @@
 
  }
 
+ /**************************************Step Navigation *************************/
  .step-nav-circle {
      box-sizing: border-box;
      position: absolute;
@@ -1089,10 +1091,7 @@
  .step-nav-circle-background {
      text-shadow: 0 -.1em 0 var(--color-white), .1em 0 0 var(--color-white), 0 .1em 0 var(--color-white), -.1em 0 0 var(--color-white);
  }
-
-
-
-
+ 
  .accordion:after {
      content: "";
      position: absolute;
@@ -1117,7 +1116,7 @@
      height: 0;
      border-bottom: solid 1px #b1b4b6;
  }
-
+ /**************************************End Step Navigation *************************/
  .blue-bg-all {
      background-color: var(--color-primary);
      color: var(--color-white);
