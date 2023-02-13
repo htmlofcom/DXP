@@ -110,6 +110,9 @@
 .gray-bg{
     background-color: var(--color-light-gray);
 }
+.blue-bg{
+    background-color: var(--color-default);
+}
  .btn-primary {
      background-color: var(--color-default);
      color: var(--color-white);
@@ -246,6 +249,7 @@
 
  .search-quick-link {
      width: 90%;
+     color: var(--color-white);
  }
 
  .search-box {
@@ -253,10 +257,6 @@
      display: flex;
      align-items: center;
      margin-top: 25px;
- }
-
- .search-quick-link {
-     color: var(--color-white);
  }
 
  @media(min-width: 992px) {
@@ -856,7 +856,9 @@
      top: 10px;
      left: 30px;
  }
-
+ .breadcrumb-position a{
+    color: var(--color-default);
+ }
  .breadcrumb-position .breadcrumb {
      margin-left: 10px;
  }
@@ -866,7 +868,13 @@
          left: 10px;
      }
  }
-
+ .breadcrumb-position .breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">");
+    color: var(--color-default);
+}
+.breadcrumb-position .breadcrumb-item.active {
+    color: var(--color-default);
+}
  /*****************************End Hero Banner**************************/
  /***************************Teaser Card*******************************/
  .info-card {
@@ -996,7 +1004,16 @@
      padding: 15px;
      border-top: none;
  }
-
+.info-card.news-info a{
+    margin-bottom: 40px;
+    color: var(--color-white);
+}
+.info-card.news-info span.date::before {
+    border-color: 1px solid var(--color-white);
+}
+.info-card.news-info{
+    border-top: none;
+}
  /************************End Teaser Card***********************/
  /* .teaser-3>.col {
     min-width: 33.3333333%;
