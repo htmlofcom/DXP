@@ -954,7 +954,12 @@
      font-weight: 400;
      padding-right: 10px;
  }
-
+ .info-card a {
+    font-size: 19px;
+    font-weight: 400;
+    padding-right: 10px;
+    color: var(--color-default);
+}
  .info-card:hover h4 {
      text-decoration: underline;
  }
