@@ -22,6 +22,7 @@
      --color-header-6: #C400ED;
      /* Page White colour*/
      --color-white: #FFFFFF;
+     --color-light-gray: #F2F2F2;
      --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
      --font-family-default: 'Sora', sans-serif;
  }
@@ -61,7 +62,7 @@
      font-size: 40px;
      line-height: 135%;
      letter-spacing: -1%;
-     font-weight: 700;
+     font-weight: 900;
  }
 
  /* Used for: Homepage carousel, destination page titles */
@@ -76,6 +77,7 @@
  h3 {
      font-size: 32px;
      line-height: 135%;
+     font-weight: 700;
      letter-spacing: -1%;
  }
 
@@ -105,11 +107,17 @@
  .f-size-xl {
      font-size: 32px;
  }
-
+.gray-bg{
+    background-color: var(--color-light-gray);
+}
  .btn-primary {
      background-color: var(--color-default);
      color: var(--color-white);
      border: 1px solid var(--color-default) !important;
+     border-radius: 30px;
+     font-style: normal;
+     font-weight: 400;
+     padding: 10px 20px;
  }
 
  .btn-primary:hover {
@@ -121,59 +129,52 @@
  }
 
  .button-subscribe {
-     background-color: var(--color-default);
-     color: var(--color-white);
-     border-radius: 30px;
-     padding: 10px 20px;
      font-size: 20px;
-     font-style: normal;
-     font-weight: 400;
      position: absolute;
      top: -22px;
  }
 
- .button-subscribe:hover {
-     color: var(--color-default);
-     background-color: var(--color-white);
-     border: 1px solid var(--color-default);
+ .video-btn {
+     background-color: var(--color-default);
  }
-/********************************Multicolor Line****************************************/
-.bg-blue {
-    background-color: var(--color-primary);
-    width: 20%;
-}
 
-.bg-megenta {
-    background-color: var(--color-header-6);
-    width: 20%;
-}
+ /********************************Multicolor Line****************************************/
+ .bg-blue {
+     background-color: var(--color-primary);
+     width: 20%;
+ }
 
-.bg-pink {
-    background-color: var(--color-pink);
-    width: 20%;
-}
+ .bg-megenta {
+     background-color: var(--color-header-6);
+     width: 20%;
+ }
 
-.bg-yellow {
-    background-color: var(--color-header-2);
-    width: 20%;
-}
+ .bg-pink {
+     background-color: var(--color-pink);
+     width: 20%;
+ }
 
-.bg-green {
-    background-color: var(--color-header-1);
-    width: 20%;
-}
+ .bg-yellow {
+     background-color: var(--color-header-2);
+     width: 20%;
+ }
 
-.subscribe-multicolor-banner {
-    height: 150px;
-}
+ .bg-green {
+     background-color: var(--color-header-1);
+     width: 20%;
+ }
 
-@media(max-width: 992px) {
-    .subscribe-multicolor-banner {
-        height: 100px;
-    }
-}
+ .subscribe-multicolor-banner {
+     height: 150px;
+ }
 
-/*********************************Multicolor Line***************************************/
+ @media(max-width: 992px) {
+     .subscribe-multicolor-banner {
+         height: 100px;
+     }
+ }
+
+ /*********************************Multicolor Line***************************************/
  /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -716,7 +717,8 @@
          border-radius: 0;
      }
  }
-/*******************************End Header*************************************/
+
+ /*******************************End Header*************************************/
 
  /***************************** carousel ************************************ */
  .carousel-indicators button.active {
@@ -805,6 +807,7 @@
  .hero-banner-img {
      height: 100%;
      object-fit: cover;
+     max-height: 400px;
  }
 
  .recommendation-block {
@@ -955,12 +958,14 @@
      font-weight: 400;
      padding-right: 10px;
  }
+
  .info-card a {
-    font-size: 19px;
-    font-weight: 400;
-    padding-right: 10px;
-    color: var(--color-default);
-}
+     font-size: 19px;
+     font-weight: 400;
+     padding-right: 10px;
+     color: var(--color-default);
+ }
+
  .info-card:hover h4 {
      text-decoration: underline;
  }
@@ -990,10 +995,6 @@
      background-color: #f3f3f3;
      padding: 15px;
      border-top: none;
- }
-
- .video-btn {
-     background-color: var(--color-default);
  }
 
  /************************End Teaser Card***********************/
@@ -1091,7 +1092,7 @@
  .step-nav-circle-background {
      text-shadow: 0 -.1em 0 var(--color-white), .1em 0 0 var(--color-white), 0 .1em 0 var(--color-white), -.1em 0 0 var(--color-white);
  }
- 
+
  .accordion:after {
      content: "";
      position: absolute;
@@ -1116,6 +1117,7 @@
      height: 0;
      border-bottom: solid 1px #b1b4b6;
  }
+
  /**************************************End Step Navigation *************************/
  .blue-bg-all {
      background-color: var(--color-primary);
