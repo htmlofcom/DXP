@@ -107,12 +107,15 @@
  .f-size-xl {
      font-size: 32px;
  }
-.gray-bg{
-    background-color: var(--color-light-gray);
-}
-.blue-bg{
-    background-color: var(--color-default);
-}
+
+ .gray-bg {
+     background-color: var(--color-light-gray);
+ }
+
+ .blue-bg {
+     background-color: var(--color-default);
+ }
+
  .btn-primary {
      background-color: var(--color-default);
      color: var(--color-white);
@@ -856,9 +859,11 @@
      top: 10px;
      left: 30px;
  }
- .breadcrumb-position a{
-    color: var(--color-default);
+
+ .breadcrumb-position a {
+     color: var(--color-default);
  }
+
  .breadcrumb-position .breadcrumb {
      margin-left: 10px;
  }
@@ -868,13 +873,16 @@
          left: 10px;
      }
  }
+
  .breadcrumb-position .breadcrumb-item+.breadcrumb-item::before {
-    content: var(--bs-breadcrumb-divider, ">");
-    color: var(--color-default);
-}
-.breadcrumb-position .breadcrumb-item.active {
-    color: var(--color-default);
-}
+     content: var(--bs-breadcrumb-divider, ">");
+     color: var(--color-default);
+ }
+
+ .breadcrumb-position .breadcrumb-item.active {
+     color: var(--color-default);
+ }
+
  /*****************************End Hero Banner**************************/
  /***************************Teaser Card*******************************/
  .info-card {
@@ -1004,16 +1012,20 @@
      padding: 15px;
      border-top: none;
  }
-.info-card.news-info a{
-    margin-bottom: 40px;
-    color: var(--color-white);
-}
-.info-card.news-info span.date::before {
-    border-color: 1px solid var(--color-white);
-}
-.info-card.news-info{
-    border-top: none;
-}
+
+ .info-card.news-info a {
+     margin-bottom: 40px;
+     color: var(--color-white);
+ }
+
+ .info-card.news-info span.date::before {
+     border-color: 1px solid var(--color-white);
+ }
+
+ .info-card.news-info {
+     border-top: none;
+ }
+
  /************************End Teaser Card***********************/
  /* .teaser-3>.col {
     min-width: 33.3333333%;
@@ -1153,4 +1165,113 @@
      width: 100%;
      left: 99%;
      right: auto;
+ }
+
+ /***************************Footer****************************************************/
+ .footer {
+     background-color: var(--color-default);
+     font-size: 14px !important;
+     line-height: 21px;
+ }
+
+ .footer .about-ofcom li {
+     font-size: 14px;
+     margin-bottom: 14px;
+     line-height: 21px;
+ }
+
+ .footer .follow {
+     margin-bottom: 30px;
+     margin-top: 26px;
+ }
+
+ .footer .social-icons-list a i {
+
+     font-size: 17px;
+     margin-right: 33px;
+     margin-bottom: 26px;
+ }
+
+ .copyrights {
+     margin-top: -25px;
+ }
+
+ @media screen and (min-width: 576px) and (max-width: 992px) {
+     .footer section.social {
+         border-bottom: 1px solid white;
+         margin-top: 30px !important;
+     }
+
+     .footer section.social h6 {
+         float: left;
+         margin-right: 20px;
+     }
+
+     .footer section i {
+         margin-right: 40px;
+         text-align: center;
+
+     }
+
+     .footer .follow {
+         margin-bottom: 30px;
+         margin-top: 0px;
+     }
+
+     .footer .about-ofcom li {
+         margin-bottom: 14px;
+     }
+
+     .social .social-icons {
+         justify-content: center;
+     }
+
+     .footer .social-icons-list a i {
+         margin-right: 43px;
+     }
+ }
+
+ /* For Mobile Portrait View */
+ @media screen and (max-width: 480px) and (min-width:320px) {
+
+     .footer section {
+         border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+     }
+
+     .copyrights {
+         margin-top: 10px;
+     }
+
+     .footer section i {
+         margin-right: 20px;
+     }
+
+     .footer .follow {
+         margin-bottom: 30px;
+         margin-top: 25px;
+     }
+
+     .footer .copyrights {
+         padding-left: 11px;
+         margin-top: 25px;
+     }
+
+     .footer .social-icons-list a i {
+         margin-right: 39px;
+
+     }
+
+     .footer .about-ofcom li {
+         margin-bottom: 16px;
+     }
+
+     .footer .social .social-icons {
+         text-align: center;
+
+         justify-content: center;
+     }
+
+     .footer .social h6 {
+         margin-top: 30px !important;
+     }
  }
