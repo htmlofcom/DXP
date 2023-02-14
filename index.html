@@ -14,6 +14,12 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <title>OFCOM website</title>
+  <style>
+     .swiper-wrapper {
+     padding-bottom: 40px !important;
+     display: inline;
+ }
+  </style>
 </head>
 
 <body>
@@ -671,7 +677,7 @@
 
     <section class="green-bg py-5">
       <div class="container">
-        <h3 class="text-center my-3 text-white">Related news</h3>
+        <h3 class="text-center my-3">Latest news</h3>
         <swiper-container class="mySwiper" init="false">
           <swiper-slide>
             <div class="info-card news-info related-news">
@@ -1025,6 +1031,7 @@
           spaceBetween: 30,
         },
       },
+      // loop: true,
     });
     swiperEl.initialize();
   </script>

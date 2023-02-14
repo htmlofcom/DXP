@@ -1319,9 +1319,9 @@
      padding: 15px 70px 15px 15px;
  }
 
- /* swiper-container swiper-slide:last-child {
+ /* swiper-container + swiper-slide:last-child {
      padding: 15px 15px 15px 15px;
- } */
+ }  */
 
  @media(max-width: 992px) {
      swiper-container {
@@ -1339,8 +1339,9 @@
      color: var(--color-default);
  }
 
- swiper-container .swiper-wrapper {
+ .swiper-wrapper {
      padding-bottom: 40px !important;
+     display: inline;
  }
 
  /* swiper-slide img {
