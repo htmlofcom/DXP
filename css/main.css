@@ -195,14 +195,16 @@
  .subscribe-multicolor-banner {
      height: 150px;
  }
- .hero-multicolor-banner{
-    position: absolute;
-    opacity: .95;
-    height: 80px;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-}
+
+ .hero-multicolor-banner {
+     position: absolute;
+     opacity: .95;
+     height: 80px;
+     bottom: 20px;
+     left: 0;
+     right: 0;
+ }
+
  @media(max-width: 992px) {
      .subscribe-multicolor-banner {
          height: 100px;
@@ -866,6 +868,11 @@
      color: var(--color-white);
      margin-top: -60px;
      margin-left: 40px;
+ }
+
+ .recommendation-block .recommendation-header {
+     font-size: 19px;
+     font-weight: 700;
  }
 
  @media(max-width: 992px) {
