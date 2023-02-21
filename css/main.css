@@ -59,7 +59,7 @@
 } */
  /* Used for: Landing page titles */
  h1 {
-     font-size: 40px;
+     font-size: 48px;
      line-height: 135%;
      letter-spacing: -1%;
      font-weight: 900;
@@ -99,7 +99,9 @@
      margin: 0;
      padding: 0;
  }
-
+.w-90{
+    width: 90% !important;
+}
  .v-center {
      align-items: center;
  }
@@ -130,6 +132,9 @@
      padding: 10px 20px;
  }
 
+ .btn-primary:focus{
+    border: 1px dotted red;
+ }
  .btn-primary:hover {
      background-color: var(--color-white);
      color: var(--color-default);
@@ -161,7 +166,11 @@
      position: absolute;
      top: -22px;
  }
-
+ .button-news-form {
+    font-size: 20px;
+    position: absolute;
+    bottom: -22px;
+}
  .video-btn {
      background-color: var(--color-default);
  }
@@ -239,7 +248,7 @@
      display: block;
  }
 
- header .search-form #search-box {
+ .search-form #search-box {
      width: 100%;
      border: 1px solid #4f4f4f;
      padding: 15px;
@@ -248,7 +257,7 @@
      height: 100%;
  }
 
- header .search-form label {
+ .search-form label {
      font-size: 2rem;
      padding-left: .5rem;
      padding-right: 1rem;
@@ -853,7 +862,7 @@
  .hero-banner {
      background-color: var(--color-pink);
      color: var(--color-default);
-     padding: 50px 20px 0 80px;
+     padding: 50px 20px 80px 80px;
  }
 
  .hero-banner-img {
@@ -861,13 +870,35 @@
      object-fit: cover;
      max-height: 400px;
  }
-
+ .hero-banner-narrow{
+    background-color: var(--color-default);
+    color: var(--color-white);
+    padding: 60px 10px 50px 10px;
+ }
+ .hero-banner-full{
+    background-color: var(--color-header-1);
+    color: var(--color-default);
+    padding: 60px 10px 100px 80px;
+ }
+ .feedback-block{
+    background-color: #e8e7e7;
+    padding: 35px 81px;
+    text-align: center;
+ }
+ .feedback-block span{
+    font-size: 19px;
+    margin-right: 100px;
+ }
+ .feedback-block .btn{
+    margin-right: 60px;
+ }
  .recommendation-block {
      background-color: var(--color-default);
      padding: 28px 40px;
      color: var(--color-white);
      margin-top: -60px;
      margin-left: 40px;
+     margin-right: 40px;
  }
 
  .recommendation-block .recommendation-header {
@@ -917,11 +948,15 @@
  .breadcrumb-position a {
      color: var(--color-default);
  }
-
+ .breadcrumb-position.text-light a {
+    color: var(--color-white);
+}
  .breadcrumb-position .breadcrumb {
      margin-left: 10px;
  }
-
+ .breadcrumb-position .breadcrumb .breadcrumb-item {
+    font-size: 11px;
+}
  @media(max-width: 992px) {
      .breadcrumb-position {
          left: 10px;
@@ -936,6 +971,14 @@
  .breadcrumb-position .breadcrumb-item.active {
      color: var(--color-default);
  }
+ .breadcrumb-position.text-light .breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">");
+    color: var(--color-white);
+}
+
+.breadcrumb-position.text-light .breadcrumb-item.active {
+    color: var(--color-white);
+}
 
  /*****************************End Hero Banner**************************/
  /***************************Teaser Card*******************************/
@@ -955,7 +998,7 @@
      content: "";
      margin: 0 auto;
      position: absolute;
-     width: 12%;
+     width: 30px;
      bottom: 50px;
  }
 
@@ -1047,7 +1090,14 @@
      margin-top: 20px;
      margin-bottom: 40px;
  }
-
+.info-card .card-img-small{
+    height: 200px;
+    width: 100%;
+}
+.info-card .card-img-large{
+    height: 400px;
+    width: 100%;
+}
  .info-card-video {
      background-color: var(--color-primary);
      margin-bottom: 40px;
@@ -1071,6 +1121,7 @@
  .info-card.news-info a {
      margin-bottom: 40px;
      color: var(--color-white);
+     font-size: 14px;
  }
 
  .info-card.news-info span.date::before {
@@ -1080,7 +1131,30 @@
  .info-card.news-info {
      border-top: none;
  }
-
+ .info-card.news-info .date{
+    font-size: 14px;
+ }
+ .info-card.news-center {
+    border-top: none;
+    padding-top: 0;
+}
+ .info-card.news-center a {
+    margin-bottom: 40px;
+    color: var(--color-default);
+    font-size: 14px;
+}
+.info-card.news-center .date{
+    font-size: 14px;
+}
+.info-card.news-center:hover{
+    background-color: transparent;
+    transform: none;
+    -webkit-transform:none;
+    padding: 0;
+}
+.info-card.news-center span.date::before {
+    border-color: 1px solid var(--color-default);
+}
  .info-card.related-news a {
      color: var(--color-default);
  }
@@ -1088,7 +1162,23 @@
  .info-card.related-news:hover {
      background-color: var(--color-white);
  }
-
+.news-center-form{
+    padding: 60px 0;
+    position: relative;
+}
+.news-center-form .news-center-input{
+    border-radius: 0px !important;
+    height: 50px !important;
+}
+.news-badge{
+    position: absolute;
+    top: -14px;
+    left: 14px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-size: 11px;
+    padding: 5px 7px;
+}
  /************************End Teaser Card***********************/
  /* .teaser-3>.col {
     min-width: 33.3333333%;
@@ -1340,11 +1430,13 @@
  }
 
  /*********************************End Footer******************************************/
-
+.swiper-outer{
+    margin-left: 60px;
+}
  swiper-container {
      width: 100%;
      height: 100%;
-     padding: 15px 70px 15px 15px;
+     padding: 15px 60px 15px 15px;
  }
 
  /* swiper-container + swiper-slide:last-child {
