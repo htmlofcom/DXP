@@ -1100,6 +1100,7 @@
     height: 150px;
     width: 100%;
     object-fit: cover;
+    background-color: #D4D4D4;
 }
 .info-card .card-img-large{
     height: 320px;
