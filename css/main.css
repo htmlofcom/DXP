@@ -769,7 +769,7 @@
  }
 
  @media (max-width:992px) {
-     .multicolor-banner {
+     .multicolor-banner, .menu-social-icons {
          display: none;
      }
  }
