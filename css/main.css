@@ -54,9 +54,6 @@
      color: var(--color-default);
  }
 
- /* a:visited {
-    color: var(--color-pink);
-} */
  /* Used for: Landing page titles */
  h1 {
      font-size: 48px;
@@ -112,6 +109,9 @@
      font-size: 32px;
  }
 
+ /*--------------------------------------------------------------
+# Background Color
+--------------------------------------------------------------*/
  .gray-bg {
      background-color: var(--color-light-gray);
  }
@@ -128,6 +128,9 @@
      background-color: var(--color-header-1);
  }
 
+ /*--------------------------------------------------------------
+# All Buttons
+--------------------------------------------------------------*/
  .btn-primary {
      background-color: var(--color-default);
      color: var(--color-white);
@@ -138,30 +141,12 @@
      padding: 10px 20px;
  }
 
- .btn-primary:focus {
-     border: 1px dotted red;
- }
-
  .btn-primary:hover {
      background-color: var(--color-white);
      color: var(--color-default);
      border: 1px solid var(--color-default) !important;
      -webkit-transition: all .3s linear 0s;
      transition: all .3s linear 0s;
- }
-
- .btn-primary-news-border {
-     background-color: transparent;
-     padding: 5px 20px;
-     color: var(--color-default);
-     position: absolute;
-     right: 65px;
- }
-
- @media(max-width: 992px) {
-     .btn-primary-news-border {
-         display: none;
-     }
  }
 
  .btn-secondary {
@@ -194,58 +179,71 @@
      bottom: -22px;
  }
 
+ .btn-primary-border {
+     background-color: transparent;
+     padding: 5px 20px;
+     color: var(--color-default);
+     position: absolute;
+     right: 65px;
+ }
+
+ @media(max-width: 992px) {
+     .btn-primary-border {
+         display: none;
+     }
+ }
+
  .video-btn {
      background-color: var(--color-default);
  }
 
- /********************************Multicolor Line****************************************/
- .bg-blue {
+ /*--------------------------------------------------------------
+# Multicolor Line
+--------------------------------------------------------------*/
+ .multicolor-strip .bg-blue {
      background-color: var(--color-primary);
      width: 25%;
  }
 
- .bg-megenta {
+ .multicolor-strip .bg-megenta {
      background-color: var(--color-header-6);
      width: 20%;
  }
 
- .bg-pink {
+ .multicolor-strip .bg-pink {
      background-color: var(--color-pink);
      width: 10%;
  }
 
- .bg-yellow {
+ .multicolor-strip .bg-yellow {
      background-color: var(--color-header-2);
      width: 30%;
  }
 
- .bg-green {
+ .multicolor-strip .bg-green {
      background-color: var(--color-header-1);
      width: 15%;
  }
 
- .subscribe-multicolor-banner {
+ .multicolor-strip {
      height: 150px;
  }
-
+ @media(max-width: 992px) {
+    .multicolor-strip {
+        height: 100px;
+    }
+}
  .hero-multicolor-banner {
      position: absolute;
-     opacity: .95;
+     opacity: 1;
      height: 80px;
      bottom: 20px;
      left: 0;
      right: 0;
  }
 
- @media(max-width: 992px) {
-     .subscribe-multicolor-banner {
-         height: 100px;
-     }
- }
-
- /*********************************Multicolor Line***************************************/
- /*--------------------------------------------------------------
-# Header
+/*--------------------------------------------------------------
+# Header Search
 --------------------------------------------------------------*/
  header .search-form {
      position: absolute;
@@ -357,6 +355,10 @@
      margin-right: 10px;
  }
 
+
+/*--------------------------------------------------------------
+# Header 
+--------------------------------------------------------------*/
  .brand-logo {
      height: 24px;
  }
@@ -400,6 +402,9 @@
      transition: color 0.3s ease;
  }
 
+/*--------------------------------------------------------------
+# Menu 
+--------------------------------------------------------------*/
  .header .menu>ul>li {
      display: inline-block;
      line-height: 80px;
@@ -441,16 +446,6 @@
      -webkit-box-shadow: none;
      box-shadow: none;
      background-color: var(--color-default);
- }
-
- @media(min-width: 992px) {
-
-     /* .header .menu>ul>li.menu-item-has-children.mystyle .sub-menu { */
-     /* .header .menu>ul>li.menu-item-has-children:hover .sub-menu {
-        margin-top: 0;
-        visibility: visible;
-        opacity: 1;
-    } */
  }
 
  .menu-item-has-children .sub-menu {
@@ -814,9 +809,10 @@
      }
  }
 
- /*******************************End Header*************************************/
+/*--------------------------------------------------------------
+# Main Hero Carousel 
+--------------------------------------------------------------*/
 
- /***************************** carousel ************************************ */
  .carousel-indicators button.active {
      height: 13px !important;
      width: 13px !important;
@@ -896,7 +892,9 @@
      padding-top: 0;
  }
 
- /*********************************Hero Banner**************************/
+/*--------------------------------------------------------------
+# Hero Banner 
+--------------------------------------------------------------*/
  .hero-banner {
      background-color: var(--color-pink);
      color: var(--color-default);
@@ -989,6 +987,9 @@
      height: 24px;
  }
 
+ /*--------------------------------------------------------------
+# Breadcrumb 
+--------------------------------------------------------------*/
  .breadcrumb-position {
      margin-bottom: -40px;
      position: relative;
@@ -1038,8 +1039,9 @@
      color: var(--color-white);
  }
 
- /*****************************End Hero Banner**************************/
- /***************************Teaser Card*******************************/
+/*--------------------------------------------------------------
+# Teaser Card 
+--------------------------------------------------------------*/
  .info-card {
      font-style: normal;
      font-weight: 400;
@@ -1190,8 +1192,11 @@
 
  .info-card.news-info.related-news a {
      font-size: 19px;
+     text-align: left;
  }
-
+ .info-card.news-info.related-news > img {
+    height: 200px;
+}
  .info-card.news-info span.date::before {
      border-color: 1px solid var(--color-white);
  }
@@ -1210,11 +1215,6 @@
      margin-bottom: 20px;
  }
 
- /* @media(max-width: 768px) {
-    .info-card.news-center {
-        
-    }
-} */
  .info-card.news-center a {
      margin-bottom: 40px;
      color: var(--color-default);
@@ -1265,14 +1265,6 @@
  }
 
  /************************End Teaser Card***********************/
- /* .teaser-3>.col {
-    min-width: 33.3333333%;
-}
-
-.teaser-2>.col {
-    min-width: 50%;
-} */
-
  .teaser-3>.col {
      min-width: 33.3333333%;
      margin-bottom: 20px;
@@ -1282,10 +1274,6 @@
      min-width: 50%;
      margin-bottom: 20px;
  }
-
- /* .col.active {
-    background-color: #ff8a00;
-} */
 
  @media(max-width: 768px) {
 
@@ -1300,7 +1288,9 @@
 
  }
 
- /**************************************Step Navigation *************************/
+/*--------------------------------------------------------------
+# Step Navigation 
+--------------------------------------------------------------*/
  .step-nav-circle {
      box-sizing: border-box;
      position: absolute;
@@ -1405,7 +1395,9 @@
      right: auto;
  }
 
- /***************************Footer****************************************************/
+ /*--------------------------------------------------------------
+# Footer 
+--------------------------------------------------------------*/
  .footer {
      background-color: var(--color-default);
      font-size: 14px !important;
@@ -1514,7 +1506,9 @@
      }
  }
 
- /*********************************End Footer******************************************/
+/*--------------------------------------------------------------
+# Swiper
+--------------------------------------------------------------*/
  .swiper-outer {
      margin-left: 60px;
  }
@@ -1534,10 +1528,6 @@
          padding: 15px 30px 15px 15px;
      }
  }
-
- /* swiper-container + swiper-slide:last-child {
-     padding: 15px 15px 15px 15px;
- }  */
 
  @media(max-width: 992px) {
      swiper-container {
@@ -1567,7 +1557,9 @@
     object-fit: cover;
   } */
 
- /********************************** Accordion ********************/
+ /*--------------------------------------------------------------
+# Accordion 
+--------------------------------------------------------------*/
  .destination-accordian .accordion-button::after {
      background-image: url("../assets/img/web-icons/Accordion expand.svg");
      transform: scale(.7) !important;
@@ -1626,10 +1618,12 @@
  .destination-accordian .accordion-button:focus {
      box-shadow: none;
  }
- .accordion-item{
-    position: relative;
+
+ .accordion-item {
+     position: relative;
  }
- .destination-accordian .accordion-collapse.show::after{
+
+ .destination-accordian .accordion-collapse.show::after {
      position: absolute;
      background-color: #F2F2F2;
      display: block;
@@ -1640,14 +1634,15 @@
      left: 100%;
      right: auto;
  }
- .destination-accordian .accordion-collapse.show::before{
-    position: absolute;
-    background-color: #F2F2F2;
-    display: block;
-    content: '';
-    top: 0;
-    height: 100%;
-    width: 100%;
-    left: auto;
-    right: 100%;
-}
+
+ .destination-accordian .accordion-collapse.show::before {
+     position: absolute;
+     background-color: #F2F2F2;
+     display: block;
+     content: '';
+     top: 0;
+     height: 100%;
+     width: 100%;
+     left: auto;
+     right: 100%;
+ }
