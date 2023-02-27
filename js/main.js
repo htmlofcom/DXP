@@ -103,3 +103,26 @@ document.addEventListener('DOMContentLoaded', () => {
     //searchForm.classList.remove('active');
   }
 });
+
+
+// for main menu 
+$(document).ready(function(){
+  $(".menu-item-has-children").click(function (){
+    if($(this).children(".sub-menu").hasClass("sub-menu-show")){
+      $(this).children(".sub-menu").removeClass("sub-menu-show");
+      $(this).find(".fa-angle-down").removeClass("rotate-arrow");
+      //alert("If"+ $(this).children(".fa-angle-down").text("if"));
+    }
+    else{   
+    $(".menu-item-has-children .sub-menu").removeClass("sub-menu-show"); 
+     $(this).children(".sub-menu").addClass("sub-menu-show");
+     $(".menu-item-has-children .fa-angle-down").removeClass("rotate-arrow");
+     $(this).find(".fa-angle-down").addClass("rotate-arrow");
+     
+    }
+  });
+  $("#search-icon").click(function(){
+    $(".menu-item-has-children .sub-menu").removeClass("sub-menu-show");
+    $(".menu-item-has-children .fa-angle-down").removeClass("rotate-arrow");
+  })
+  });
