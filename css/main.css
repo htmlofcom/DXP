@@ -144,7 +144,18 @@
      -webkit-transition: all .3s linear 0s;
      transition: all .3s linear 0s;
  }
-
+.btn-primary-news-border{
+    background-color: transparent;
+    padding: 5px 20px;
+    color: var(--color-default);
+    position: absolute;
+    right: 65px;
+}
+@media(max-width: 992px) {
+    .btn-primary-news-border {
+        display: none;
+    }
+}
  .btn-secondary {
      background-color: var(--color-white);
      color: var(--color-default);
