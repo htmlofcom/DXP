@@ -100,11 +100,6 @@
  .w-90 {
      width: 90% !important;
  }
-
- .v-center {
-     align-items: center;
- }
-
  .f-size-xl {
      font-size: 32px;
  }
@@ -228,11 +223,13 @@
  .multicolor-strip {
      height: 150px;
  }
+
  @media(max-width: 992px) {
-    .multicolor-strip {
-        height: 100px;
-    }
-}
+     .multicolor-strip {
+         height: 100px;
+     }
+ }
+
  .hero-multicolor-banner {
      position: absolute;
      opacity: 1;
@@ -242,7 +239,7 @@
      right: 0;
  }
 
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 # Header Search
 --------------------------------------------------------------*/
  header .search-form {
@@ -356,7 +353,7 @@
  }
 
 
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 # Header 
 --------------------------------------------------------------*/
  .brand-logo {
@@ -402,7 +399,7 @@
      transition: color 0.3s ease;
  }
 
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 # Menu 
 --------------------------------------------------------------*/
  .header .menu>ul>li {
@@ -565,10 +562,6 @@
      .header .item-center {
          order: 3;
          flex: 0 0 100%;
-     }
-
-     .v-center {
-         justify-content: space-between;
      }
 
      .header .mobile-menu-trigger {
@@ -809,7 +802,7 @@
      }
  }
 
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 # Main Hero Carousel 
 --------------------------------------------------------------*/
 
@@ -892,7 +885,7 @@
      padding-top: 0;
  }
 
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 # Hero Banner 
 --------------------------------------------------------------*/
  .hero-banner {
@@ -1039,7 +1032,7 @@
      color: var(--color-white);
  }
 
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 # Teaser Card 
 --------------------------------------------------------------*/
  .info-card {
@@ -1051,46 +1044,7 @@
      min-height: 180px;
      position: relative;
      width: 100%;
- }
-
- .info-card span.date::before {
-     border: 1px solid #333;
-     content: "";
-     margin: 0 auto;
-     position: absolute;
-     width: 30px;
-     bottom: 50px;
- }
-
- .bg-all .info-card:hover:after,
- .bg-all .info-card:hover:before {
-     position: absolute;
-     background: var(--color-secondary);
-     display: block;
-     content: '';
-     top: 0;
-     height: 100%;
-     width: 100%;
-     left: 99%;
-     transform: scale(1, 1);
-     -webkit-transform: scale(1, 1);
-     transition: all 0.8s ease-in-out;
-     -webkit-transition: all 0.8s ease-in-out;
- }
-
- .bg-all .info-card:hover:before {
-     left: auto;
-     right: 99%;
- }
-
- .bg-all .info-card {
-     font-style: normal;
-     font-weight: 400;
-     font-size: 19px;
-     border-top: 1px solid black;
-     padding: 15px 10px 10px 10px;
-     min-height: 180px;
-     margin-bottom: 10px;
+     text-align: left;
  }
 
  .info-card:hover {
@@ -1103,21 +1057,27 @@
      border-top: none;
  }
 
+ .info-card span.date::before {
+     border: 1px solid #333;
+     content: "";
+     margin: 0 auto;
+     position: absolute;
+     width: 30px;
+     bottom: 50px;
+ }
  .icon-arrow-hover {
      display: none;
  }
 
- .info-card:hover .icon-arrow-hover,
- .card-body .info-card:hover .icon-arrow-hover {
+ .info-card:hover .icon-arrow-hover {
      display: flex;
  }
 
- .info-card:hover .icon-arrow,
- .card-body .info-card:hover .icon-arrow {
+ .info-card:hover .icon-arrow {
      display: none;
  }
 
- .card-body .info-card:hover {
+ /* .card-body .info-card:hover {
      background-color: transparent;
      padding: 15px 0 10px 0;
      transform: scale(1, 1);
@@ -1125,7 +1085,7 @@
      transition: all 0.3s ease-in-out;
      -webkit-transition: all 0.3s ease-in-out;
      border-top: 1px solid black;
- }
+ } */
 
  .info-card h4 {
      font-size: 19px;
@@ -1152,7 +1112,7 @@
  }
 
  .info-card .card-img-small {
-     height: 150px;
+     height: 200px;
      width: 100%;
      object-fit: cover;
      background-color: #D4D4D4;
@@ -1190,13 +1150,6 @@
      font-size: 14px;
  }
 
- .info-card.news-info.related-news a {
-     font-size: 19px;
-     text-align: left;
- }
- .info-card.news-info.related-news > img {
-    height: 200px;
-}
  .info-card.news-info span.date::before {
      border-color: 1px solid var(--color-white);
  }
@@ -1209,10 +1162,19 @@
      font-size: 14px;
  }
 
+swiper-slide .info-card a{
+    color: var(--color-default) !important;
+    font-size: 19px !important;
+}
+/*************News Center******************/
  .info-card.news-center {
      border-top: none;
      padding-top: 0;
      margin-bottom: 20px;
+ }
+
+ .info-card.news-center .card-img-small {
+     height: 150px;
  }
 
  .info-card.news-center a {
@@ -1236,14 +1198,6 @@
      border-color: 1px solid var(--color-default);
  }
 
- .info-card.related-news a {
-     color: var(--color-default);
- }
-
- .info-card.related-news:hover {
-     background-color: var(--color-white);
- }
-
  .news-center-form {
      padding: 60px 0;
      position: relative;
@@ -1262,6 +1216,37 @@
      color: var(--color-white);
      font-size: 11px;
      padding: 5px 7px;
+ }
+
+ .bg-expend .info-card:hover:after,
+ .bg-expend .info-card:hover:before {
+     position: absolute;
+     background: var(--color-secondary);
+     display: block;
+     content: '';
+     top: 0;
+     height: 100%;
+     width: 100%;
+     left: 99%;
+     transform: scale(1, 1);
+     -webkit-transform: scale(1, 1);
+     transition: all 0.8s ease-in-out;
+     -webkit-transition: all 0.8s ease-in-out;
+ }
+
+ .bg-expend .info-card:hover:before {
+     left: auto;
+     right: 99%;
+ }
+
+ .bg-expend .info-card {
+     font-style: normal;
+     font-weight: 400;
+     font-size: 19px;
+     border-top: 1px solid black;
+     padding: 15px 10px 10px 10px;
+     min-height: 180px;
+     margin-bottom: 10px;
  }
 
  /************************End Teaser Card***********************/
@@ -1288,7 +1273,7 @@
 
  }
 
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 # Step Navigation 
 --------------------------------------------------------------*/
  .step-nav-circle {
@@ -1376,14 +1361,14 @@
  }
 
  /**************************************End Step Navigation *************************/
- .blue-bg-all {
+ .blue-bg-expend {
      background-color: var(--color-primary);
      color: var(--color-white);
      padding: 20px;
      position: relative;
  }
 
- .blue-bg-all::after {
+ .blue-bg-expend::after {
      position: absolute;
      background-color: var(--color-primary);
      display: block;
@@ -1506,7 +1491,7 @@
      }
  }
 
-/*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 # Swiper
 --------------------------------------------------------------*/
  .swiper-outer {
