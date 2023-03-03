@@ -1161,7 +1161,9 @@
  .info-card.news-info .date {
      font-size: 14px;
  }
-
+swiper-slide .info-card:hover{
+    background-color: var(--color-white);
+}
 swiper-slide .info-card a{
     color: var(--color-default) !important;
     font-size: 19px !important;
