@@ -302,13 +302,23 @@
      margin-left: 40px;
      padding: 10px;
  }
-
+ @media(max-width: 768px) {
+    .langauge-change{
+        margin-left: 20px;
+    }   
+}
  .search-icons {
      padding: 18px;
      background-color: var(--color-default);
-     color: white;
+     color: var(--color-white);
  }
-
+ @media(max-width: 992px) {
+    .search-icons {
+        padding: 18px;
+        background-color: var(--color-white);
+        color: var(--color-default); 
+    }  
+}
  .search-icons:hover {
      background-color: var(--color-secondary);
  }
