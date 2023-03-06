@@ -1486,7 +1486,7 @@ swiper-slide .info-card a{
      }
 
      .footer .social-icons-list a i {
-         margin-right: 43px;
+         margin-right: 20px;
      }
  }
 
@@ -1516,7 +1516,7 @@ swiper-slide .info-card a{
      }
 
      .footer .social-icons-list a i {
-         margin-right: 39px;
+         margin-right: 12px;
 
      }
 
@@ -1541,7 +1541,7 @@ swiper-slide .info-card a{
  swiper-container {
      width: 100%;
      height: 100%;
-     padding: 15px 60px 60px 15px;
+     padding: 15px 75px 60px 15px;
  }
 
  @media(max-width: 768px) {
@@ -1550,7 +1550,7 @@ swiper-slide .info-card a{
      }
 
      swiper-container {
-         padding: 15px 30px 15px 15px;
+         padding: 15px 45px 15px 15px;
      }
  }
 
