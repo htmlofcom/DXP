@@ -1017,7 +1017,9 @@
      color: var(--color-white);
      padding: 10px;
  }
-
+ .recommendation-block a:hover {
+    text-decoration: underline;
+}
  .recommendation-block img {
      height: 24px;
  }
