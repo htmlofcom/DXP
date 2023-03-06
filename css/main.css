@@ -221,7 +221,7 @@
  }
 
  .multicolor-strip .bg-yellow {
-     background-color: var(--color-header-2);
+     background-color: var(--color-secondary);
      width: 30%;
  }
 
@@ -854,6 +854,8 @@
  .carousel-heroimg-cls {
      background-color: var(--color-default);
      min-height: 410px;
+     padding-left: 7.5% !important;
+     padding-right: 10px;
  }
 
  .carousel-heroimg-cls .carousel-indicators {
@@ -870,13 +872,17 @@
      z-index: 2;
      padding: 0;
      margin-bottom: 7rem;
-     margin-left: 4%;
+     margin-left: 7.5%;
      list-style: none;
  }
 
  @media(max-width: 768px) {
      .homepage-carousel-cls .carousel-indicators {
          text-align: center;
+         margin-left: 4%;
+     }
+     .carousel-heroimg-cls{
+        padding-left: 4%;
      }
  }
 
@@ -1546,7 +1552,7 @@ swiper-slide .info-card a{
 # Swiper
 --------------------------------------------------------------*/
  .swiper-outer {
-     margin-left: 60px;
+     margin-left: 90px;
  }
 
  swiper-container {
