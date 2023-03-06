@@ -175,15 +175,21 @@
  }
 
  .btn-primary-border {
+    background-color: transparent;
+    padding: 5px 20px;
+    color: var(--color-default);
+    right: 65px;
+}
+ .btn-primary-latest-news {
      background-color: transparent;
      padding: 5px 20px;
      color: var(--color-default);
-     position: absolute;
      right: 65px;
+     position: absolute;
  }
 
  @media(max-width: 992px) {
-     .btn-primary-border {
+     .btn-primary-latest-news {
          display: none;
      }
  }
@@ -909,7 +915,7 @@
  .hero-banner-full {
      background-color: var(--color-header-1);
      color: var(--color-default);
-     padding: 60px 10px 100px 80px;
+     padding: 60px 40px 100px 80px;
  }
 
  .feedback-block {
@@ -1219,7 +1225,11 @@ swiper-slide .info-card a{
      font-size: 11px;
      padding: 5px 7px;
  }
-
+.news-social-icons i{
+    color: var(--color-default);
+    font-size: 20px;
+    margin-left: 30px;
+}
  .bg-expend .info-card:hover:after,
  .bg-expend .info-card:hover:before {
      position: absolute;
