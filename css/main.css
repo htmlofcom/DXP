@@ -457,7 +457,10 @@
      visibility: hidden;
      opacity: 1;
  }
-
+ .menu-item-has-children .fa-angle-down{
+    margin-left: 3px;
+    font-size: 20px;
+ }
  .sub-menu-show {
      margin-top: 0 !important;
      visibility: visible !important;
