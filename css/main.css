@@ -295,6 +295,7 @@
 
  .langauge-change {
      font-size: 11px;
+     margin-left: 50px;
  }
 
  .search-icons {
@@ -411,7 +412,7 @@
  .header .menu>ul>li {
      display: inline-block;
      line-height: 80px;
-     margin-left: 60px;
+     margin-left: 40px;
  }
 
  .header .menu>ul>li>a {
@@ -1046,7 +1047,7 @@
      font-weight: 400;
      font-size: 19px;
      border-top: 1px solid black;
-     padding: 15px 0 10px 0;
+     padding: 10px;
      min-height: 180px;
      position: relative;
      width: 100%;
@@ -1055,9 +1056,9 @@
 
  .info-card:hover {
      background-color: var(--color-secondary);
-     padding: 15px;
+     /* padding: 15px;
      transform: scale(1.05, 1.05);
-     -webkit-transform: scale(1.05, 1.05);
+     -webkit-transform: scale(1.05, 1.05); */
      transition: all 0.3s ease-in-out;
      -webkit-transition: all 0.3s ease-in-out;
      border-top: none;
