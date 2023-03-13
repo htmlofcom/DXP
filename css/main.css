@@ -1298,10 +1298,7 @@ swiper-slide .info-card a{
      height: 100%;
      width: 100%;
      left: 99%;
-     transform: scale(1, 1);
-     -webkit-transform: scale(1, 1);
-     transition: all 0.8s ease-in-out;
-     -webkit-transition: all 0.8s ease-in-out;
+     border: 1px solid transparent;
  }
 
  .bg-expend .info-card:hover:before {
@@ -1313,12 +1310,19 @@ swiper-slide .info-card a{
      font-style: normal;
      font-weight: 400;
      font-size: 19px;
-     border-top: 1px solid black;
      padding: 15px 10px 10px 10px;
      min-height: 180px;
      margin-bottom: 10px;
  }
-
+ .bg-expend .info-card:hover {
+    background-color: var(--color-secondary);
+    transition: none;
+    -webkit-transition: none;
+}
+.bg-expend .info-card:before:hover {
+    background-color: transparent;
+    height: 1px;
+}
  /************************End Teaser Card***********************/
  .teaser-3>.col {
      min-width: 33.3333333%;
@@ -1465,19 +1469,18 @@ swiper-slide .info-card a{
      line-height: 21px;
  }
  .footer .about-ofcom li a{
-    padding: 10px;
+    display: inline-block;
  }
  .footer .follow {
      margin-bottom: 30px;
      margin-top: 26px;
-     margin-left: 10px;
  }
 
  .footer .social-icons-list a i {
     font-size: 17px;
     margin-right: 10px;
     margin-bottom: 9px;
-    padding: 10px;
+    padding: 10px 10px 10px 0;
  }
 
  .copyrights {
