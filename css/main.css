@@ -551,6 +551,7 @@
      flex: 0 0 25%;
      padding: 0 15px;
      margin: 15px 0;
+     padding-left: 65px;
  }
 
  .header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item .title {
@@ -594,6 +595,9 @@
  /*responsive*/
  @media(max-width: 991px) {
 
+    .header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item {
+        padding-left: 15px;
+    }
      .header .item-center {
          order: 3;
          flex: 0 0 100%;
@@ -803,6 +807,7 @@
  .multicolor-banner {
      position: absolute;
      bottom: 0;
+     margin-left: -65px;
  }
 
  .menu-social-icons {
@@ -810,6 +815,7 @@
      margin-right: 10px;
      position: absolute;
      bottom: 60px;
+     margin-left: -65px;
  }
 
  .menu-social-icons a i {
@@ -1468,19 +1474,18 @@ swiper-slide .info-card a{
      margin-bottom: 14px;
      line-height: 21px;
  }
- .footer .about-ofcom li a{
-    display: inline-block;
- }
+ 
  .footer .follow {
      margin-bottom: 30px;
      margin-top: 26px;
  }
 
- .footer .social-icons-list a i {
+ .footer .social-icons-list a {
     font-size: 17px;
     margin-right: 10px;
     margin-bottom: 9px;
     padding: 10px 10px 10px 0;
+    display: inline-block;
  }
 
  .copyrights {
