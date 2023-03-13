@@ -457,6 +457,11 @@
  }
 
  @media(max-width: 991px) {
+
+    .header .menu>ul>li>a:hover {
+        border-bottom: 2px solid var(--color-secondary);
+    }
+   
      .header .menu>ul>li>a {
          color: var(--color-white);
      }
@@ -649,7 +654,7 @@
          width: 100%;
          background-color: var(--color-default);
          left: 0;
-         top: 0;
+         top: 65px;
          height: 100%;
          overflow: hidden;
          transform: translate(-100%);
@@ -799,7 +804,7 @@
      }
 
      .menu-overlay.active {
-         visibility: visible;
+         visibility: hidden;
          opacity: 1;
      }
  }
