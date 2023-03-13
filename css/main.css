@@ -550,13 +550,14 @@
      flex-wrap: wrap;
      padding: 20px 0 60px 0;
      min-height: 78vh;
+     padding-left: 65px;
  }
 
  .header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item {
      flex: 0 0 25%;
      padding: 0 15px;
      margin: 15px 0;
-     padding-left: 65px;
+     
  }
 
  .header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item .title {
@@ -600,8 +601,8 @@
  /*responsive*/
  @media(max-width: 991px) {
 
-    .header .menu>ul>li .sub-menu.mega-menu-column-4>.list-item {
-        padding-left: 15px;
+    .header .menu>ul>li .sub-menu.mega-menu-column-4 {
+        padding-left: 5px;
     }
      .header .item-center {
          order: 3;
@@ -1553,7 +1554,6 @@ swiper-slide .info-card a{
      }
 
      .footer .copyrights {
-         padding-left: 11px;
          margin-top: 25px;
      }
 
