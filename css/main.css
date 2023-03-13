@@ -736,6 +736,7 @@
          text-align: center;
          color: var(--color-white);
          font-size: 25px;
+         visibility: hidden;
      }
 
      .header .menu .menu-main {
@@ -1718,3 +1719,6 @@ swiper-slide .info-card a{
      left: auto;
      right: 100%;
  }
+
+
+ .close-bars:before{display:none}

@@ -125,4 +125,10 @@ $(document).ready(function(){
     $(".menu-item-has-children .sub-menu").removeClass("sub-menu-show");
     $(".menu-item-has-children .fa-angle-down").removeClass("rotate-arrow");
   })
+
+  $(".mobile-nav-toggle").click(function(){
+    $(this).toggleClass("btn-close close-bars");
+    $("body").toggleClass("overflow-hidden");
+    });
+   
   });
