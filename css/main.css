@@ -284,7 +284,7 @@
      background: var(--color-default);
      align-items: center;
      box-shadow: var(--box-shadow);
-     top: 100%;
+     top: 96%;
      right: 0%;
      width: 100%;
      transition: color 0.3s ease;
@@ -400,7 +400,7 @@
      }
 
      .search-icons {
-         padding: 26px;
+         padding: 25px;
      }
  }
 
@@ -698,7 +698,7 @@
          width: 100%;
          background-color: var(--color-default);
          left: 0;
-         top: 65px;
+         top: 62px;
          height: 100%;
          overflow: hidden;
          transform: translate(-100%);
@@ -996,6 +996,12 @@
      background-color: var(--color-header-1);
      color: var(--color-default);
      padding: 60px 40px 100px 80px;
+ }
+
+ @media(max-width: 768px) {
+     .hero-banner-full {
+         padding: 60px 20px 100px 20px;
+     }
  }
 
  .feedback-block {
@@ -1300,7 +1306,7 @@
  /*************News Center******************/
  .info-card.news-center {
      border-top: none;
-     padding-top: 0;
+     padding: 0;
      margin-bottom: 20px;
  }
 
@@ -1309,7 +1315,7 @@
  }
 
  .info-card.news-center a {
-     margin-bottom: 40px;
+     margin-bottom: 18px;
      color: var(--color-default);
      font-size: 14px;
  }
@@ -1322,11 +1328,55 @@
      background-color: transparent;
      transform: none;
      -webkit-transform: none;
-     padding: 0;
+ }
+
+ .info-card.news-center:before {
+     background-color: transparent;
  }
 
  .info-card.news-center span.date::before {
      border-color: 1px solid var(--color-default);
+     bottom: 35px
+ }
+
+ .banner-detail {
+     width: 75%;
+ }
+
+ .banner-news-btn {
+     margin-left: auto;
+ }
+
+ @media(max-width: 768px) {
+     .banner-detail {
+         width: 100%;
+     }
+
+     .banner-news-btn {
+         margin: 0 auto;
+     }
+ }
+
+ .news-social-block {
+     display: flex;
+     align-content: flex-end;
+     justify-content: flex-end;
+     flex-wrap: wrap
+ }
+.news-social-icons-block{
+    display: flex;
+}
+ @media(max-width: 992px) {
+     .news-social-block {
+         display: block;
+     }
+     .news-social-icons-block{
+        display: block;
+    }
+    .news-social-icons-block span{ 
+        margin-bottom: 10px;
+        display: inline-block;
+    }
  }
 
  .news-center-form {
