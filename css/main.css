@@ -43,6 +43,8 @@
      line-height: 150%;
      letter-spacing: -1%;
      overflow-x: hidden;
+     max-width: 1900px;
+     margin: 0 auto;
  }
 
  a {
