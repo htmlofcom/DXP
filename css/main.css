@@ -267,9 +267,9 @@
 
  .hero-multicolor-banner {
      position: absolute;
-     opacity: 1;
+     opacity: .9;
      height: 80px;
-     bottom: 20px;
+     bottom: 55px;
      left: 0;
      right: 0;
  }
@@ -899,9 +899,9 @@
 
  .carousel-heroimg-cls {
      background-color: var(--color-default);
-     min-height: 410px;
+     min-height: 490px;
      padding-left: 7.5% !important;
-     padding-right: 10px;
+     padding-right: 20px;
  }
 
  .carousel-heroimg-cls .carousel-indicators {
@@ -917,7 +917,7 @@
      display: block;
      z-index: 2;
      padding: 0;
-     margin-bottom: 7rem;
+     margin-bottom: 10rem;
      margin-left: 7.5%;
      list-style: none;
  }
@@ -955,7 +955,7 @@
  }
 
  .hero-image-carousel img {
-     height: 450px;
+     height: 490px;
      object-fit: cover;
  }
 
