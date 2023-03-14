@@ -1193,6 +1193,7 @@
      font-weight: 400;
      padding: 10px 10px 10px 0;
      color: var(--color-default);
+     line-height: 24px;
  }
 
  .info-card:hover a {
@@ -1223,6 +1224,7 @@
      background-color: var(--color-primary);
      margin-bottom: 40px;
      border-radius: 0;
+     padding: 20px;
  }
 
  .info-card-video .card-text {
@@ -1236,7 +1238,7 @@
 
  .info-card-image {
      background-color: #f3f3f3;
-     padding: 15px;
+     padding: 20px;
  }
 
  .info-card-image::before {
