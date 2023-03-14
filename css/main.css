@@ -340,13 +340,15 @@
      padding: 18px;
      background-color: var(--color-default);
      color: var(--color-white);
+     margin-left: auto;
  }
 
  @media(max-width: 992px) {
      .search-icons {
-         padding: 18px;
+         padding: 16px;
          background-color: var(--color-white);
          color: var(--color-default);
+         margin-left: 5px;
      }
  }
 
@@ -424,6 +426,7 @@
      width: 100%;
      position: relative;
      z-index: 99;
+     min-height: 65px;
  }
 
  .header .logo a {
