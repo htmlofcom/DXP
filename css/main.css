@@ -1737,7 +1737,10 @@
  .swiper-pagination-bullet-active {
      background-color: var(--color-default);
  }
-
+.swiper-container-area{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
  /* swiper-slide img {
     display: block;
     width: 100%;
