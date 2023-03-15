@@ -1307,7 +1307,7 @@
  .info-card.news-center {
      border-top: none;
      padding: 0;
-     margin-bottom: 20px;
+     margin-bottom: 40px;
  }
 
  .info-card.news-center .card-img-small {
@@ -1363,20 +1363,25 @@
      justify-content: flex-end;
      flex-wrap: wrap
  }
-.news-social-icons-block{
-    display: flex;
-}
+
+ .news-social-icons-block {
+     display: flex;
+ }
+
  @media(max-width: 992px) {
      .news-social-block {
          display: block;
+         text-align: center;
      }
-     .news-social-icons-block{
-        display: block;
-    }
-    .news-social-icons-block span{ 
-        margin-bottom: 10px;
-        display: inline-block;
-    }
+
+     .news-social-icons-block {
+         display: block;
+     }
+
+     .news-social-icons-block span {
+         margin-bottom: 10px;
+         display: inline-block;
+     }
  }
 
  .news-center-form {
