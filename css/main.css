@@ -721,7 +721,7 @@
          height: 50px;
          padding: 0 50px 0 15px;
          display: block;
-         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+         border-bottom: 1px solid #939393;
      }
 
      .header .menu>ul>li>a i {
@@ -1705,7 +1705,7 @@
      }
 
      swiper-container {
-         padding: 15px 45px 15px 15px;
+         padding: 15px 45px 50px 15px;
      }
  }
 
