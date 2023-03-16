@@ -43,7 +43,7 @@
      line-height: 150%;
      letter-spacing: -1%;
      overflow-x: hidden;
-     max-width: 1900px;
+     max-width: 1800px;
      margin: 0 auto;
  }
 
@@ -1031,7 +1031,7 @@
  .hero-banner-narrow {
      background-color: var(--color-default);
      color: var(--color-white);
-     padding: 60px 10px 50px 10px;
+     padding: 40px 10px;
  }
 
  .hero-banner-full {
@@ -1120,7 +1120,33 @@
  .recommendation-block img {
      height: 24px;
  }
-
+.social-icons-box {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 195px;
+    text-align: center;
+}
+@media(max-width: 992px) {
+    .social-icons-box {
+        width: 290px;
+        margin: 20px 0 0 auto;
+    }
+}
+@media(max-width: 576px) {
+    .social-icons-box {
+        width: 100%;
+        margin: 20px 0 0 auto;
+    }
+}
+.social-icons-box a{
+    padding: 10px 15px;
+    display: inline-block;
+}
+.social-icons-box a i{
+    font-size: 22px;
+    color: var(--color-default);
+}
  /*--------------------------------------------------------------
 # Breadcrumb 
 --------------------------------------------------------------*/
