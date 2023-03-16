@@ -185,11 +185,13 @@
      position: absolute;
      top: -22px;
  }
+
  @media(max-width: 768px) {
-    .button-subscribe {
-        font-size: 14px;
-    }
-}
+     .button-subscribe {
+         font-size: 14px;
+     }
+ }
+
  .button-news-form {
      font-size: 20px;
      position: absolute;
@@ -219,13 +221,15 @@
      position: absolute;
      border: 1px solid var(--color-white);
  }
+
  @media(max-width: 768px) {
-    .btn-primary-related-news {
-        position: static;
-        margin: 20px auto;
-        display: block;
-    }
-}
+     .btn-primary-related-news {
+         position: static;
+         margin: 20px auto;
+         display: block;
+     }
+ }
+
  .btn-primary-white-border {
      background-color: transparent;
      padding: 5px 20px;
@@ -240,9 +244,9 @@
 
  @media(max-width: 992px) {
      .btn-primary-latest-news {
-        position: static;
-        margin: 20px auto;
-        display: block;
+         position: static;
+         margin: 20px auto;
+         display: block;
      }
  }
 
@@ -465,11 +469,13 @@
      z-index: 99;
      min-height: 84px;
  }
+
  @media(max-width: 992px) {
-    .header {
-        min-height: 66px;
-    }
-}
+     .header {
+         min-height: 66px;
+     }
+ }
+
  .header .logo a {
      font-size: 30px;
      color: #000000;
@@ -959,7 +965,8 @@
  @media(max-width: 768px) {
      .homepage-carousel-cls .carousel-indicators {
          text-align: center;
-         margin-left: 4%;
+         margin-left: 0;
+         margin-right: 0;
      }
 
      .carousel-heroimg-cls {
@@ -997,6 +1004,15 @@
      padding-top: 0;
  }
 
+ .carousel-btn-position {
+    margin-top: 20px;
+ }
+ @media(max-width: 768px) {
+    .carousel-btn-position {
+        display: block;
+        margin: 40px auto 0 auto;
+     }
+}
  /*--------------------------------------------------------------
 # Hero Banner 
 --------------------------------------------------------------*/
