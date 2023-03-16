@@ -288,7 +288,7 @@
      position: absolute;
      opacity: .9;
      height: 80px;
-     bottom: 0px;
+     bottom: 38px;
      left: 0;
      right: 0;
  }
@@ -941,7 +941,7 @@
 
  .homepage-carousel-cls .carousel-indicators {
      position: absolute;
-     bottom: 15px;
+     bottom: 50px;
      left: 0;
      display: block;
      z-index: 2;
