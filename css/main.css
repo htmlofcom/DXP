@@ -209,7 +209,7 @@
      background-color: transparent;
      padding: 5px 20px;
      color: var(--color-default);
-     right: 65px;
+     right: 90px;
      position: absolute;
  }
 
@@ -217,7 +217,7 @@
      background-color: transparent;
      padding: 5px 20px;
      color: var(--color-white);
-     right: 65px;
+     right: 90px;
      position: absolute;
      border: 1px solid var(--color-white);
  }
