@@ -356,6 +356,7 @@
      font-size: 11px;
      margin-left: 40px;
      padding: 10px;
+     color: var(--color-default);
  }
 
  @media(max-width: 768px) {
