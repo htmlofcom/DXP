@@ -350,8 +350,8 @@
 
  .search-form label {
      font-size: 2rem;
-     padding-left: .5rem;
-     padding-right: 1rem;
+     padding-left: 1rem;
+     padding-right: .5rem;
      cursor: pointer;
      color: var(--color-white);
  }
@@ -1019,7 +1019,7 @@
  .hero-banner {
      background-color: var(--color-pink);
      color: var(--color-default);
-     padding: 50px 20px 80px 80px;
+     padding: 50px 20px 100px 80px;
  }
 
  .hero-banner-img {
@@ -1067,7 +1067,7 @@
      background-color: var(--color-default);
      padding: 28px 40px;
      color: var(--color-white);
-     margin-top: -60px;
+     margin-top: -80px;
      margin-left: 40px;
      margin-right: 40px;
  }
@@ -1530,7 +1530,7 @@
  /*--------------------------------------------------------------
 # Step Navigation 
 --------------------------------------------------------------*/
- .step-nav-circle {
+.step-accordion .step-nav-circle {
      box-sizing: border-box;
      position: absolute;
      z-index: 5;
@@ -1545,7 +1545,7 @@
  }
 
 
- .step-nav-circle--number {
+ .step-accordion .step-nav-circle--number {
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
      font-size: 16px;
@@ -1555,20 +1555,20 @@
  }
 
  @media print {
-     .step-nav-circle--number {
+    .step-accordion .step-nav-circle--number {
          font-family: sans-serif
      }
  }
 
  @media (min-width: 40.0625em) {
-     .step-nav-circle--number {
+    .step-accordion .step-nav-circle--number {
          font-size: 16px;
          line-height: 29px
      }
  }
 
 
- .step-nav-circle--logic {
+ .step-accordion .step-nav-circle--logic {
      -webkit-font-smoothing: antialiased;
      -moz-osx-font-smoothing: grayscale;
      font-size: 19px;
@@ -1580,12 +1580,12 @@
  }
 
 
- .step-nav-circle-inner {
+ .step-accordion .step-nav-circle-inner {
      float: right;
      min-width: 100%
  }
 
- .step-nav-circle-background {
+ .step-accordion .step-nav-circle-background {
      text-shadow: 0 -.1em 0 var(--color-white), .1em 0 0 var(--color-white), 0 .1em 0 var(--color-white), -.1em 0 0 var(--color-white);
  }
 
