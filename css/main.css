@@ -156,7 +156,7 @@
  }
 
  .btn-primary:focus,
- .btn-primary-white-border {
+ .btn-primary-white-border:focus {
      outline: 2px dotted var(--color-white);
      outline-offset: 5px;
  }
@@ -1277,14 +1277,15 @@
      display: none;
  }
 
- .info-card:hover .icon-arrow-hover {
+ .info-card:hover .icon-arrow-hover,
+ .recommendation-link:hover .icon-arrow-hover {
      display: flex;
  }
 
- .info-card:hover .icon-arrow {
+ .info-card:hover .icon-arrow,
+ .recommendation-link:hover .icon-arrow {
      display: none;
  }
-
  /* .card-body .info-card:hover {
      background-color: transparent;
      padding: 15px 0 10px 0;
