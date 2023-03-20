@@ -156,7 +156,8 @@
  }
 
  .btn-primary:focus,
- .btn-primary-white-border:focus {
+ .btn-primary-white-border:focus,
+ .btn-primary-border:focus {
      outline: 2px dotted var(--color-white);
      outline-offset: 5px;
  }
@@ -210,11 +211,15 @@
 
  .btn-primary-border {
      background-color: transparent;
-     padding: 5px 20px;
+     padding: 7px 20px;
      color: var(--color-default);
-     right: 65px;
+     border: 1px solid var(--color-default);
+     border-radius: 30px;
  }
-
+ .btn-primary-border:hover{
+    background-color: var(--color-default);
+    color: var(--color-white);
+ }
  .btn-primary-latest-news {
      background-color: transparent;
      padding: 5px 20px;
@@ -1191,6 +1196,7 @@
 
  .breadcrumb-position a {
      color: var(--color-default);
+     text-decoration: underline;
      padding: 5px;
  }
 
