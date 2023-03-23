@@ -641,48 +641,8 @@
         <div class="container">
 
           <div class="row">
-            <div>
-              <div class="counter" data-target="50">0</div>
-              <h3>Connections</h3>
-            </div>
-            <div class="col-lg-3 col-6">
-              <div class="count-box">
-                <i class="bi bi-emoji-smile"></i>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0"
-                  class="purecounter">232</span>
-                <p>Happy Clients</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6">
-              <div class="count-box">
-                <i class="bi bi-journal-richtext"></i>
-                <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0"
-                  class="purecounter">521</span>
-                <p>Projects</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6 mt-5 mt-lg-0">
-              <div class="count-box">
-                <i class="bi bi-headset"></i>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="0"
-                  class="purecounter">1463</span>
-                <p>Hours Of Support</p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-6 mt-5 mt-lg-0">
-              <div class="count-box">
-                <i class="bi bi-people"></i>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="0"
-                  class="purecounter">15</span>
-                <p>Hard Workers</p>
-              </div>
-            </div>
-
+            <div class="counter" data-target="50"></div>
           </div>
-
         </div>
       </section>
     </section>
@@ -791,32 +751,21 @@
   <script src="js/main.js"></script>
   <script>
     const counters = document.querySelectorAll(".counter");
-    const speed = 200; // The lower the slower
 
     counters.forEach((counter) => {
-      const updateCount = () => {
+      counter.innerText = "0";
+      const updateCounter = () => {
         const target = +counter.getAttribute("data-target");
         const count = +counter.innerText;
-
-        // Lower inc to slow and higher to slow
-        const inc = target / speed;
-
-        // console.log(inc);
-        // console.log(count);
-
-        // Check if target is reached
+        const increment = target / 2000;
         if (count < target) {
-          // Add inc to count and output in counter
-          counter.innerText = count + inc;
-          // Call function every ms
-          setTimeout(updateCount, 1);
-        } else {
-          counter.innerText = target;
-        }
+          counter.innerText = `${Math.ceil(count + increment)}`;
+          setTimeout(updateCounter, 1);
+        } else counter.innerText = target;
       };
-
-      updateCount();
+      updateCounter();
     });
+
 
   </script>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
