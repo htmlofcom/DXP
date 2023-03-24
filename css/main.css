@@ -451,15 +451,20 @@
 
  .search-quick-link li {
      margin-bottom: 20px;
- }
-
- .search-quick-link li a {
-     color: var(--color-white);
      display: flex;
      align-items: center;
+ }
+ .search-quick-link li i{
+    font-size: 22px;
+    margin-right: 8px;
+}
+.search-quick-link li:hover i{
+    color: var(--color-secondary);
+}
+ .search-quick-link li a {
+     color: var(--color-white);
      font-style: normal;
-     font-weight: 400;
-     font-size: 14px;
+     font-weight: 400;    
  }
 
  .search-quick-link li a:hover {
@@ -1718,18 +1723,22 @@
      padding: 10px 10px 10px 10px;
      display: inline-block;
      margin-left: -10px;
-     
+
  }
-.footer .social-icons-list a:hover{
-    background-color: var(--color-white);
-}
-.footer .social-icons-list a i{
-    background-color: transparent;
-    color: var(--color-white);
-}
-.footer .social-icons-list a:hover i{
-    color: var(--color-default);
-}
+
+ .footer .social-icons-list a:hover {
+     background-color: var(--color-white);
+ }
+
+ .footer .social-icons-list a i {
+     background-color: transparent;
+     color: var(--color-white);
+ }
+
+ .footer .social-icons-list a:hover i {
+     color: var(--color-default);
+ }
+
  .footer .about-ofcom a:hover {
      text-decoration: underline;
  }
@@ -1776,7 +1785,7 @@
      }
 
      .footer .social-icons-list a i {
-         margin-right: 20px;
+         margin: 0 10px;
      }
  }
 
@@ -1805,7 +1814,7 @@
      }
 
      .footer .social-icons-list a i {
-         margin-right: 12px;
+         margin: 0 5px;
 
      }
 
