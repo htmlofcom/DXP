@@ -1182,6 +1182,15 @@
      display: inline-block;
  }
 
+ .social-icons-box a:hover {
+     background-color: var(--color-default);
+     color: var(--color-white);
+ }
+
+ .social-icons-box a:hover i {
+     color: var(--color-white);
+ }
+
  .social-icons-box a i {
      font-size: 22px;
      color: var(--color-default);
@@ -1313,7 +1322,7 @@
      padding-right: 10px;
  }
 
- .info-card a {
+ .info-card .info-card-header {
      font-size: 19px;
      font-weight: 400;
      padding: 10px 10px 10px 0;
@@ -1321,7 +1330,11 @@
      line-height: 24px;
  }
 
- .info-card:hover a {
+ .info-card a {
+     color: var(--color-default);
+ }
+
+ .info-card:hover .info-card-header {
      text-decoration: underline;
  }
 
@@ -1330,6 +1343,7 @@
      font-size: 14px;
      margin-top: 20px;
      margin-bottom: 18px;
+     color: var(--color-default);
  }
 
  .info-card .card-img-small {
@@ -1704,8 +1718,18 @@
      padding: 10px 10px 10px 10px;
      display: inline-block;
      margin-left: -10px;
+     
  }
-
+.footer .social-icons-list a:hover{
+    background-color: var(--color-white);
+}
+.footer .social-icons-list a i{
+    background-color: transparent;
+    color: var(--color-white);
+}
+.footer .social-icons-list a:hover i{
+    color: var(--color-default);
+}
  .footer .about-ofcom a:hover {
      text-decoration: underline;
  }
