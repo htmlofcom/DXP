@@ -113,9 +113,11 @@
      font-weight: 700;
      letter-spacing: -1%;
  }
-.color-default{
-    color: var(--color-default) !important;
-}
+
+ .color-default {
+     color: var(--color-default) !important;
+ }
+
  /*--------------------------------------------------------------
 # Background Color
 --------------------------------------------------------------*/
@@ -1244,15 +1246,16 @@
          left: 10px;
      }
  }
- 
+
  .breadcrumb-position .breadcrumb-item+.breadcrumb-item::before {
      content: var(--bs-breadcrumb-divider, ">");
      color: var(--color-default);
  }
-.breadcrumb-position.white-color .breadcrumb-item+.breadcrumb-item::before {
-    content: var(--bs-breadcrumb-divider, ">");
-    color: var(--color-white);
-}
+
+ .breadcrumb-position.white-color .breadcrumb-item+.breadcrumb-item::before {
+     content: var(--bs-breadcrumb-divider, ">");
+     color: var(--color-white);
+ }
 
  .breadcrumb-position .breadcrumb-item.active {
      color: var(--color-default);
@@ -2196,4 +2199,11 @@
 
  .pdfdownload:hover {
      background-color: var(--color-secondary);
+ }
+
+
+ .serch-result-image {
+     height: 140px;
+     object-fit: cover;
+     width: 100%;
  }
