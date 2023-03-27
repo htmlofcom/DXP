@@ -113,12 +113,18 @@
      font-weight: 700;
      letter-spacing: -1%;
  }
-
+.color-default{
+    color: var(--color-default) !important;
+}
  /*--------------------------------------------------------------
 # Background Color
 --------------------------------------------------------------*/
  .gray-bg {
      background-color: var(--color-light-gray);
+ }
+
+ .pink-bg {
+     background-color: var(--color-pink);
  }
 
  .blue-bg {
@@ -271,6 +277,7 @@
 
  .video-btn {
      background-color: var(--color-default);
+     font-size: 14px;
  }
 
  /*--------------------------------------------------------------
@@ -454,17 +461,20 @@
      display: flex;
      align-items: center;
  }
- .search-quick-link li i{
-    font-size: 22px;
-    margin-right: 8px;
-}
-.search-quick-link li:hover i{
-    color: var(--color-secondary);
-}
+
+ .search-quick-link li i {
+     font-size: 22px;
+     margin-right: 8px;
+ }
+
+ .search-quick-link li:hover i {
+     color: var(--color-secondary);
+ }
+
  .search-quick-link li a {
      color: var(--color-white);
      font-style: normal;
-     font-weight: 400;    
+     font-weight: 400;
  }
 
  .search-quick-link li a:hover {
@@ -1056,9 +1066,8 @@
 # Hero Banner 
 --------------------------------------------------------------*/
  .hero-banner {
-     background-color: var(--color-pink);
      color: var(--color-default);
-     padding: 50px 20px 100px 80px;
+     padding: 50px 80px 100px 80px;
  }
 
  .hero-banner-img {
@@ -1074,7 +1083,6 @@
  }
 
  .hero-banner-full {
-     background-color: var(--color-header-1);
      color: var(--color-default);
      padding: 60px 40px 100px 80px;
  }
@@ -1236,11 +1244,15 @@
          left: 10px;
      }
  }
-
+ 
  .breadcrumb-position .breadcrumb-item+.breadcrumb-item::before {
      content: var(--bs-breadcrumb-divider, ">");
      color: var(--color-default);
  }
+.breadcrumb-position.white-color .breadcrumb-item+.breadcrumb-item::before {
+    content: var(--bs-breadcrumb-divider, ">");
+    color: var(--color-white);
+}
 
  .breadcrumb-position .breadcrumb-item.active {
      color: var(--color-default);
