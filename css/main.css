@@ -1112,7 +1112,7 @@
 
  .carousel-heroimg-cls {
      background-color: var(--color-default);
-     min-height: 490px;
+     min-height: 499px;
      padding-left: 7.5% !important;
      padding-right: 20px;
  }
@@ -1174,7 +1174,7 @@
  }
 
  .hero-image-carousel img {
-     height: 490px;
+     height: 499px;
      object-fit: cover;
  }
 
@@ -1356,7 +1356,11 @@
      top: 10px;
      left: 30px;
  }
-
+ @media(max-width: 992px) {
+    .breadcrumb-position {
+       display: none;
+    }
+}
  .breadcrumb-position a {
      color: var(--color-default);
      text-decoration: underline;
@@ -2362,7 +2366,7 @@
 
  #topics-carousel .carousel-control-next {
      top: 100px;
-     left: 55px;
+     left: 75px;
  }
 
  @media screen and (min-width: 320px) and (max-width: 575px) {
@@ -2493,6 +2497,12 @@
 
  .callout-purple {
      padding: 50px 100px;
+ }
+
+ @media(max-width: 991px) {
+     .callout-purple {
+         padding: 20px 20px;
+     }
  }
 
  .callout-purple.light-blue {
@@ -2691,7 +2701,6 @@
 
  .close-li-icon {
      visibility: hidden;
-
  }
 
  .modal-topic-list li i {
@@ -2911,26 +2920,251 @@
      text-align: center;
  }
 
-  /*--------------------------------------------------------------
+ /*--------------------------------------------------------------
 #  Alerts
 --------------------------------------------------------------*/
-.alerts {
-    position: relative;
-    padding: 18px;
-    margin-bottom: 1rem;
-    border: 1px solid transparent;
-    border-radius: 0;
-    text-align: center;
-}
-.alerts.blue{
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-.alerts.green{
-    background-color: var(--color-header-1);
-    color: var(--color-default);
-}
-.alerts.orange{
-    background-color: var(--color-secondary);
-    color: var(--color-default);
-}
+ .alerts {
+     position: relative;
+     padding: 18px;
+     margin-bottom: 1rem;
+     border: 1px solid transparent;
+     border-radius: 0;
+     text-align: center;
+ }
+
+ .alerts.blue {
+     background-color: var(--color-primary);
+     color: var(--color-white);
+ }
+
+ .alerts.green {
+     background-color: var(--color-header-1);
+     color: var(--color-default);
+ }
+
+ .alerts.orange {
+     background-color: var(--color-secondary);
+     color: var(--color-default);
+ }
+
+ /*--------------------------------------------------------------
+#  Modal Pop up
+--------------------------------------------------------------*/
+ .modal-popup .modal-header {
+     border-bottom: none;
+     font-family: var(--font-family-default);
+     font-size: 32px;
+     font-weight: 700;
+     line-height: 43px;
+     color: var(--color-default);
+ }
+
+ .modal-popup .modal-content {
+     border-radius: 0px;
+     padding: 20px 80px;
+ }
+
+ .modal-popup .modal-header button i {
+     color: var(--color-default);
+     font-size: 28px;
+ }
+
+ .modal-popup .modal-header button {
+     border: none;
+     background: none;
+     margin-top: -15px;
+     width: 30px;
+     height: 46px;
+     position: absolute;
+     right: 5px;
+     top: 10px;
+ }
+
+ .modal-popup .modal-body {
+     font-family: var(--font-family-default);
+     font-size: var(--font-size-default);
+     font-weight: 400;
+     line-height: var(--line-height-default);
+     color: var(--color-default);
+     /* padding-left: 80px;
+padding-right: 80px; */
+ }
+
+ .modal-popup .modal-footer {
+     border-top: none;
+     justify-content: start;
+     /* padding-left: 80px;
+padding-right: 80px; */
+ }
+
+ .modal.show.modal-popup .modal-dialog {
+     transform: none;
+     margin-right: auto;
+ }
+
+ .modal-popup-close-btn {
+     background-color: white;
+     font-family: var(--font-family-default);
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 21px;
+     padding: 10px 20px;
+     color: var(--color-default);
+     border: 1px solid #000045;
+ }
+
+ .modal-popup .modal-footer .btn-secondary {
+     border: 1px solid #000045;
+ }
+
+ /*--------------------------------------------------------------
+#  Language notification
+--------------------------------------------------------------*/
+
+ .language-notification .modal-header {
+     border-bottom: none;
+     font-family: var(--font-family-default);
+     font-size: 19px;
+     font-weight: 700;
+     line-height: 43px;
+     color: var(--color-default);
+     padding-left: 15px;
+ }
+
+ .language-notification .modal-content {
+     border-radius: 0px;
+     padding: 20px 40px;
+     background-color: #F2F2F2;
+     box-shadow: 0px 6px 10px rgba(0, 0, 69, 0.25);
+
+ }
+
+ .language-notification.show .modal-dialog {
+     transform: none;
+     margin-right: auto;
+ }
+
+ .language-notification .modal-header button i {
+     color: var(--color-default);
+     font-size: 28px;
+ }
+
+ .language-notification .modal-header button {
+     border: none;
+     background: none;
+     width: 30px;
+     height: 46px;
+     position: absolute;
+     right: 10px;
+     top: 0;
+ }
+
+ .language-notification .modal-body {
+     font-family: var(--font-family-default);
+     font-size: var(--font-size-default);
+     font-weight: 400;
+     line-height: var(--line-height-default);
+     color: var(--color-default);
+     padding-top: 0px;
+ }
+
+ .language-notification .modal-footer {
+     border-top: none;
+     justify-content: start;
+     padding-top: 0px;
+
+ }
+
+ .language-notification .modal-footer .btn-secondary::after {
+     display: none;
+
+ }
+
+ .language-notification .modal-footer .btn-secondary {
+     border: 1px solid #000045;
+
+ }
+
+ .language-trans-btn {
+     background-color: var(--color-default);
+     font-family: var(--font-family-default);
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 21px;
+     padding: 9px 20px;
+
+
+ }
+
+ .language-more-select {
+     background-color: white;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 21px;
+     padding: 10px 36px 10px 25px;
+     border: 1px solid #000045;
+     color: var(--color-default);
+     appearance: none;
+     background: transparent;
+     background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
+     background-repeat: no-repeat;
+     background-position-x: 80%;
+     background-position-y: 11px;
+
+ }
+
+ .language-notification .modal-body .languae-opts {
+     width: 63%;
+     padding: 11px 20px;
+ }
+
+ /*--------------------------------------------------------------
+#  Social List
+--------------------------------------------------------------*/
+
+ .social-list-group h3 {
+     font-family: var(--font-family-default);
+     font-size: 32px;
+     line-height: 43px;
+     color: var(--color-default);
+ }
+
+ .social-list-group {
+     padding: 50px 100px;
+ }
+
+ @media(max-width: 991px) {
+     .social-list-group {
+         padding: 20px 20px;
+     }
+ }
+
+ .social-list-group ul li {
+     font-family: var(--font-family-default);
+     font-size: var(--font-size-default);
+     line-height: 21px;
+     color: var(--color-default);
+ }
+
+ .social-list-group ul li p::before {
+     content: '✓';
+     margin-right: 10px;
+ }
+
+ .social-list-group ul li p {
+     margin-bottom: 5px;
+ }
+
+ .social-list-group ul li span {
+     display: inline-block;
+     margin-left: 20px;
+ }
+
+ .tooltip-inner {
+     background-color: var(--color-default);
+     padding: 10px 20px;
+ }
+
+ .tooltip.bs-tooltip-top .tooltip-arrow::before {
+     border-top-color: var(--color-default) !important;
+ }
